@@ -5802,6 +5802,20 @@ gatsby-core-utils@^2.0.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
+gatsby-core-utils@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.3.0.tgz#ea42960a9b384959a96d897d580237f84cadbbd8"
+  integrity sha512-M7RlR6jL2dtkUu4AoKBoQaPTsbpByzWHc7HBgeYdwzuqbk4VuMe6K76pFDvFSNj0+LvVhWoRGHO7OEtpfb2bEA==
+  dependencies:
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    file-type "^16.2.0"
+    fs-extra "^8.1.0"
+    node-object-hash "^2.0.0"
+    proper-lockfile "^4.1.1"
+    tmp "^0.2.1"
+    xdg-basedir "^4.0.0"
+
 gatsby-graphiql-explorer@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-1.0.0.tgz#5de202dfcf266f4b5e661230e3b862b43c5d3682"
@@ -6072,13 +6086,33 @@ gatsby-source-filesystem@^3.0.0:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
+gatsby-source-filesystem@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-3.3.0.tgz#80816422e3025ea523e7cf19a458d649f2798190"
+  integrity sha512-ctdeRaRzZNwXY+8XYAaTgKh4en1RcfALCA/OJ3NmRnHMCBadPQ+CEzyxpwJSNaK4/6ouxy0nw7+kxhpmW1tVOQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    better-queue "^3.8.10"
+    chokidar "^3.4.3"
+    file-type "^16.0.0"
+    fs-extra "^8.1.0"
+    gatsby-core-utils "^2.3.0"
+    got "^9.6.0"
+    md5-file "^5.0.0"
+    mime "^2.4.6"
+    pretty-bytes "^5.4.1"
+    progress "^2.0.3"
+    valid-url "^1.0.9"
+    xstate "^4.14.0"
+
 gatsby-source-silverstripe@^0.2:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/gatsby-source-silverstripe/-/gatsby-source-silverstripe-0.2.6.tgz#df61bd8e0653ffb0b3c719a7cee5d49c4e0599ec"
-  integrity sha512-1hIfy8l3VIIjszW3EPxFYuxKy5C8MWS50U3jpWezN1TZHSMOskXRAmT68vO3NKzIvcp5s9wXKJfNtrlsY6OMGA==
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/gatsby-source-silverstripe/-/gatsby-source-silverstripe-0.2.7.tgz#593b356186b838fe16db5a488cab98c2d70a04b1"
+  integrity sha512-cciVRLPaERkUN15MwdZY8zPeTnJ43Z+wVlSh5M4UgAIXIl5RjVLHd7pj1gSe5AlV25evik6mwa8STTP3RoEzZg==
   dependencies:
     chalk "^4.1.0"
     dotenv "^8.2.0"
+    gatsby-source-filesystem "^3.3.0"
     graphql "^15.5.0"
     node-fetch "^2.6.1"
     p-queue "^6.6.2"

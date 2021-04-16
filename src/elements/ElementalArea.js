@@ -1,12 +1,25 @@
 import React from 'react';
 import ElementContent from './ElementContent';
+import FileBlock from "./FileBlock";
+import BannerBlock from "./BannerBlock";
 
 // Todo: Support dynamic element components 
-const ElementalArea = ({ elementalArea }) => {
+const ElementalArea = ({ elements }) => {
     return (
-        elementalArea.elements.map(element => {
+        elements.map(element => {
             return (
-                <ElementContent key={element.id} element={element} />
+                <div>
+                    {element.__typename === `SS_ElementContent` &&
+                        <ElementContent key={element.id} element={element} />
+                    }
+                    {element.__typename === `SS_FileBlock` &&
+                        <FileBlock key={element.id} element={element} />
+                    }
+                    {element.__typename === `SS_BannerBlock` &&
+                        <BannerBlock key={element.id} element={element} />
+                    }
+                </div>
+                
             )
         })
     )

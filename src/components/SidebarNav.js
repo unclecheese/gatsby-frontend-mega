@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const SidebarNav = ({ pages }) => {
-
     return (
         <nav id="pageNav" role="navigation" className="page-sidebar-widget">
             <ul className="nav flex-column">

@@ -8,7 +8,7 @@ import PageLayout from "../layouts/PageLayout";
 
 const Page = ({
   data: {
-    ssTestPage: {
+    ssTestPageInterface: {
       title,
       content,
       childNodes,
@@ -46,7 +46,7 @@ const Page = ({
 
 export const query = graphql`
   query($id: String!) {
-    ssTestPage( id: {eq: $id }) {
+    ssTestPageInterface( id: {eq: $id }) {
         title
         content
         childNodes {

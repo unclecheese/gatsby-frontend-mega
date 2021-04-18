@@ -77,13 +77,18 @@ export const query = graphql`
               }
               ... on SS_FileBlock {
                   file {
-                      ... on SS_FileInterface {
+                    ... on SS_FileInterface {
                       localFile {
-                          childImageSharp {
-                              gatsbyImageData(
-                                  width: 200
-                              )
-                          }
+                        absolutePath
+                      }
+                    }
+                    ... on SS_Image {
+                      localFile {
+                        childImageSharp {
+                          gatsbyImageData(
+                              width: 200
+                          )
+                        }
                       }
                     }
                   }

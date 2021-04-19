@@ -82,15 +82,6 @@ export const query = graphql`
                         absolutePath
                       }
                     }
-                    ... on SS_Image {
-                      localFile {
-                        childImageSharp {
-                          gatsbyImageData(
-                              width: 200
-                          )
-                        }
-                      }
-                    }
                   }
               }
               ... on SS_BannerBlock {
@@ -101,15 +92,7 @@ export const query = graphql`
                             absolutePath    
                         }
                     }
-                    ... on SS_Image {
-                        localFile {
-                            childImageSharp {
-                                gatsbyImageData(
-                                    width: 200
-                                )
-                            }
-                        }    
-                    }
+
                 }
               }
            }

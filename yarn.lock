@@ -6068,7 +6068,7 @@ gatsby-source-filesystem@^3.0.0, gatsby-source-filesystem@^3.3.0:
 
 gatsby-source-silverstripe@silverstripe/gatsby-source-silverstripe#master:
   version "0.2.12"
-  resolved "https://codeload.github.com/silverstripe/gatsby-source-silverstripe/tar.gz/ad7ed6929575fe70e4d3c68bfabf3966809b1d38"
+  resolved "https://codeload.github.com/silverstripe/gatsby-source-silverstripe/tar.gz/6cd0e412d7bf9a1e577e932406dfc557751216eb"
   dependencies:
     chalk "^4.1.0"
     dotenv "^8.2.0"
